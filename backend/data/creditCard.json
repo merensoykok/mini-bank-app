@@ -1,0 +1,13 @@
+[
+  {
+    "number": "11112222233334444",
+    "security_code": "000",
+    "expiration_date": "12/25",
+    "type": "Visa",
+    "user_id": "user748254765729",
+    "currency": "USD",
+    "limit": 1000,
+    "debt": 500,
+    "minimum_payment_rate": 0.4
+  }
+]

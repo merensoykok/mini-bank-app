@@ -1,0 +1,82 @@
+[
+  {
+    "account_id": "acc751267678308",
+    "user_id": "user751267621180",
+    "type": "checking",
+    "currency": "USD",
+    "name": "dolar",
+    "amount": 0
+  },
+  {
+    "account_id": "acc751267688412",
+    "user_id": "user751267621180",
+    "type": "checking",
+    "currency": "EUR",
+    "name": "euro",
+    "amount": 0
+  },
+  {
+    "account_id": "acc751267693977",
+    "user_id": "user751267621180",
+    "type": "checking",
+    "currency": "TRY",
+    "name": "tl",
+    "amount": 0
+  },
+  {
+    "account_id": "acc751367215077",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "USD",
+    "name": "dolar1",
+    "amount": 0
+  },
+  {
+    "account_id": "acc751367220588",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "EUR",
+    "name": "euro1",
+    "amount": 10
+  },
+  {
+    "account_id": "acc751367224242",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "TRY",
+    "name": "try1",
+    "amount": 0
+  },
+  {
+    "account_id": "acc751367232149",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "EUR",
+    "name": "euro2",
+    "amount": 450
+  },
+  {
+    "account_id": "acc751367232150",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "EUR",
+    "name": "euro3",
+    "amount": 200
+  },
+  {
+    "account_id": "acc751367235948",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "USD",
+    "name": "dolar2",
+    "amount": 0
+  },
+  {
+    "account_id": "acc752647855944",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "EUR",
+    "name": "agentAccountEUR",
+    "amount": 50
+  }
+]

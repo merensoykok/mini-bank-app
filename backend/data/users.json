@@ -1,0 +1,62 @@
+[
+  {
+    "user_id": "user748254765729",
+    "username": "123",
+    "password": "$2b$10$mOLE37PL8iQ80Cv4bdVFp.FdqAqvaewVVIq5qXAbdo0AIon9B2qQe",
+    "account_ids": [
+      "acc748434991837",
+      "acc748513556985",
+      "acc748513557733",
+      "acc748513558191",
+      "acc748513844172",
+      "acc748518825672",
+      "acc748518830972",
+      "acc748519622516",
+      "acc748519929741",
+      "acc748520350944",
+      "acc748520355386",
+      "acc748520361649",
+      "acc748520367537",
+      "acc748520855087",
+      "acc748521727583",
+      "acc748521731728",
+      "acc748521735811",
+      "acc748522834074",
+      "acc751282085213",
+      "acc751282303183",
+      "acc751283914089",
+      "acc751284392100",
+      "acc751284403758",
+      "acc751284423723",
+      "acc751284442229",
+      "acc751284566635",
+      "acc751365933645",
+      "acc751366305695",
+      "acc751367215077",
+      "acc751367220588",
+      "acc751367224242",
+      "acc751367232149",
+      "acc751367235948",
+      "acc751367389735",
+      "acc751368588868",
+      "acc751975818042",
+      "acc752647855944"
+    ]
+  },
+  {
+    "user_id": "user748501474905",
+    "username": "asd",
+    "password": "$2b$10$I24P0aZdZUz9NoKKnvbhfum4v53qGA41ROsztXtOy01sxWEJRGwiG",
+    "account_ids": []
+  },
+  {
+    "user_id": "user751267621180",
+    "username": "eren",
+    "password": "$2b$10$y7ZbMBXYOFxgNcHP2PN2Ue6CWZxD4wedWrNwFeB3fiWi2jKVZ6H86",
+    "account_ids": [
+      "acc751267678308",
+      "acc751267688412",
+      "acc751267693977"
+    ]
+  }
+]
