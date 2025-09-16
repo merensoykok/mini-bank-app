@@ -10,8 +10,10 @@
 
 	const app = express();
 
+	const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
+
 	app.use(cors({
-		origin: 'http://localhost:3000',
+		origin: FRONTEND_URL,
 		credentials: true
 	}));
 
@@ -25,6 +27,7 @@
 	app.get('/', (req, res) => {
 		res.json({ message: 'Mini Bank API is running!' });
 	});
+	
 	const PORT = 5000;
 
 	app.listen(PORT, () => {
