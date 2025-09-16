@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
+import { apiEndpoints } from '../config/api';
 
 function PayCreditCard() {
     const [accounts, setAccounts] = useState([]);
@@ -22,7 +23,9 @@ function PayCreditCard() {
     const loadAccounts = async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/account', {
+            const res = await axios.get(
+                //'http://localhost:5000/api/account', {
+                apiEndpoints.accounts, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setAccounts(res.data.accounts);
@@ -37,7 +40,9 @@ function PayCreditCard() {
     const loadCreditCards = async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/credit-card', {
+            const res = await axios.get(
+                //'http://localhost:5000/api/credit-card', {
+                apiEndpoints.creditCards, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setCreditCards(res.data.credit_cards);
@@ -70,7 +75,8 @@ function PayCreditCard() {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.post(
-                'http://localhost:5000/api/credit-card/pay-credit-card',
+                //'http://localhost:5000/api/credit-card/pay-credit-card',
+                apiEndpoints.payCreditCard,
                 { 
                     from_account: fromAccount,
                     card_number: selectedCard,
@@ -125,7 +131,7 @@ function PayCreditCard() {
                     >
                         {accounts.map(acc => (
                             <option key={acc.account_id} value={acc.account_id}>
-                                {acc.account_id} - {acc.type} ({acc.amount} {acc.currency})
+                                <strong>  {acc.name} </strong> -  {acc.account_id} - {acc.type} ({acc.amount} {acc.currency})
                             </option>
                         ))}
                     </select>

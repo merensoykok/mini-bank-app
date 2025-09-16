@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 import CreateAccount from './CreateAccount';
+import { apiEndpoints } from '../config/api';
 import '../styles/global.css';
 
 export default function Dashboard() {
@@ -18,7 +19,7 @@ export default function Dashboard() {
     const fetchAccounts = async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/account', {
+            const res = await axios.get(apiEndpoints.accounts, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setAccounts(res.data.accounts);
@@ -31,7 +32,7 @@ export default function Dashboard() {
 
     const handleDeleteAccount = async (accountId) => {
         const token = localStorage.getItem('token');
-        const res = await axios.delete('http://localhost:5000/api/account/delete', 
+        const res = await axios.delete(apiEndpoints.deleteAccount, 
             {
                 data: { account_id: accountId } ,
                 headers: { Authorization: `Bearer ${token}` }
@@ -87,7 +88,7 @@ export default function Dashboard() {
                                 <div>
                                     <h3 
                                         className="font-semibold text-lg" 
-                                        itemprop="name"
+                                        itemprop="name" 
                                     >
                                         {acc.name}
                                     </h3>
@@ -95,7 +96,7 @@ export default function Dashboard() {
                                         className="text-gray-600" 
                                         itemprop="identifier"
                                     >
-                                        Hesap No: {acc.account_id}
+                                        Account ID: {acc.account_id}
                                     </p>
                                     <p 
                                         className="mt-2 text-xl font-bold" 
@@ -139,10 +140,16 @@ export default function Dashboard() {
                             Money Transfer
                         </button>
                         <button 
-                            onClick={() => navigate('/pay-credit-card')}                        
+                            //onClick={() => navigate('/pay-credit-card')}                        
                             className="action-button bg-purple-500 hover:bg-purple-600 text-white w-full"
                         >
                             Pay Credit Card Debit
+                        </button>
+                        <button 
+                            onClick={() => navigate('/money-transfer')}
+                            className="action-button bg-purple-500 hover:bg-purple-600 text-white w-full"
+                        >
+                            Get Loan
                         </button>
                     </div>
                 </div>

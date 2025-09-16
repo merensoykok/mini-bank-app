@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
+import { apiEndpoints } from '../config/api';
 
 function Login({setToken}) {
     const [username, setUsername] = React.useState('');
@@ -20,7 +21,11 @@ function Login({setToken}) {
         }
 
         try{
-            const res = await axios.post('http://localhost:5000/api/user/login', { username, password });
+            const res = await axios.post(
+                //'http://localhost:5000/api/user/login', 
+                apiEndpoints.login,
+                { username, password }
+            );
             localStorage.setItem('token', res.data.token);
             setToken(res.data.token);
             navigate('/dashboard');

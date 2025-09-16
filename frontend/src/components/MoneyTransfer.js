@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
+import { apiEndpoints } from '../config/api';
 
 
 export default function MoneyTransfer() {
@@ -23,7 +24,9 @@ export default function MoneyTransfer() {
     const loadAccounts = async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/account', {
+            const res = await axios.get(
+                //'http://localhost:5000/api/account', {
+                apiEndpoints.accounts, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setAccounts(res.data.accounts);
@@ -70,7 +73,8 @@ export default function MoneyTransfer() {
         try {
             const token = localStorage.getItem('token');
             const res = await axios.post(
-                'http://localhost:5000/api/account/money-transfer',
+                //'http://localhost:5000/api/account/money-transfer',
+                apiEndpoints.moneyTransfer,
                 { 
                     from_account: fromAccount, 
                     to_account: toAccount, 

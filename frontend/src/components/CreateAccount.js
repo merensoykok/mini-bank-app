@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
+import { apiEndpoints } from '../config/api';
+
 
 export default function CreateAccount() {
     const [type, setType] = useState('checking');
@@ -28,7 +30,8 @@ export default function CreateAccount() {
         try {
             const token = localStorage.getItem('token');
             const res = await axios.post(
-                'http://localhost:5000/api/account/create',
+                //'http://localhost:5000/api/account/create',
+                apiEndpoints.createAccount,
                 { type, currency, name },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

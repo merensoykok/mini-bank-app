@@ -10,7 +10,11 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/user/register', { username, password });
+            await axios.post(
+                //'http://localhost:5000/api/user/register'
+                apiEndpoints.register,
+                { username, password }
+            );
             navigate('/login');
         } catch (err) {
             //alert(err.response.data.message);
