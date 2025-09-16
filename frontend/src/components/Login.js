@@ -21,6 +21,7 @@ function Login({setToken}) {
         }
 
         try{
+            console.log('Submitting login for:', apiEndpoints.login);
             const res = await axios.post(
                 //'http://localhost:5000/api/user/login', 
                 apiEndpoints.login,
