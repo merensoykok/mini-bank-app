@@ -12,7 +12,7 @@ export const apiEndpoints = {
     deleteAccount: `${API_BASE_URL}/api/account/delete`,
 
     // Money transfer endpoint (backend route: /api/account/money-transfer)
-    transfer: `${API_BASE_URL}/api/account/money-transfer`,
+    moneyTransfer : `${API_BASE_URL}/api/account/money-transfer`,
 
     // Credit card endpoints (backend mounts /api/credit-card)
     creditCards: `${API_BASE_URL}/api/credit-card`,

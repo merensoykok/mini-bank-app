@@ -1,9 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://mini-bank-app-tawny.vercel.app/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
-  }
-}
