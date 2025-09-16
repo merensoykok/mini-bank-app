@@ -37,7 +37,7 @@
     "type": "checking",
     "currency": "EUR",
     "name": "euro1",
-    "amount": 10
+    "amount": 150
   },
   {
     "account_id": "acc751367224242",
@@ -48,23 +48,7 @@
     "amount": 0
   },
   {
-    "account_id": "acc751367232149",
-    "user_id": "user748254765729",
-    "type": "checking",
-    "currency": "EUR",
-    "name": "euro2",
-    "amount": 450
-  },
-  {
-    "account_id": "acc751367232150",
-    "user_id": "user748254765729",
-    "type": "checking",
-    "currency": "EUR",
-    "name": "euro3",
-    "amount": 200
-  },
-  {
-    "account_id": "acc751367235948",
+    "account_id": "acc753790569362",
     "user_id": "user748254765729",
     "type": "checking",
     "currency": "USD",
@@ -72,11 +56,43 @@
     "amount": 0
   },
   {
-    "account_id": "acc752647855944",
+    "account_id": "acc753790575952",
     "user_id": "user748254765729",
     "type": "checking",
     "currency": "EUR",
-    "name": "agentAccountEUR",
+    "name": "euro2",
+    "amount": 400
+  },
+  {
+    "account_id": "acc753790580625",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "TRY",
+    "name": "try2",
+    "amount": 0
+  },
+  {
+    "account_id": "acc754044712208",
+    "user_id": "user748254765729",
+    "type": "savings",
+    "currency": "EUR",
+    "name": "EUR_Agent_Acc",
     "amount": 50
+  },
+  {
+    "account_id": "acc755518319552",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "TRY",
+    "name": "DenemeAgenti123",
+    "amount": 0
+  },
+  {
+    "account_id": "acc757333860902",
+    "user_id": "user748254765729",
+    "type": "checking",
+    "currency": "TRY",
+    "name": "DenemeAgenti12345",
+    "amount": 0
   }
 ]
